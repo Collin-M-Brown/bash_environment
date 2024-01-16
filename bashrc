@@ -4,7 +4,7 @@ bind "set completion-ignore-case on"
 alias python='python3'
 HOME_DIR=/home/cbrown01
 SCRIPT_PATH=/$HOME_DIR/BasicScripts/
-REPOS=$HOME_DIR/repos
+REPOS=$HOME_DIR/Git
 
 ###############COMMON################
 #BRANCH_LOG=
@@ -25,8 +25,8 @@ REPOS=$HOME_DIR/repos
 
 function realias() {
     alias home="cd $HOME_DIR"
-    alias bsh="source /home/cbrown01/repos/bash_environment/bashrc"
-    alias cbsh="code /home/cbrown01/repos/bash_environment/bashrc"
+    alias bsh="source $REPOS/bash_environment/bashrc"
+    alias cbsh="code $REPOS/bash_environment/bashrc"
     alias fsp="cd $REPOS/full_stack_project"
     alias sc="cd $SCRIPT_PATH"
     alias repos="cd $REPOS"
